@@ -1,0 +1,105 @@
+
+.contact-section {
+  position: relative;
+  padding: 7rem 1.5rem;
+  background: transparent;
+  color: var(--text-main);
+}
+
+.contact-container {
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.contact-title span {
+  color: var(--accent);
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 3.5rem;
+  line-height: 1.7;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 1.1rem 1rem;
+  border-radius: 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: var(--bg-main);
+  padding: 0 6px;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+}
