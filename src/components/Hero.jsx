@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { profile } from "../data/profileData";
 import "../styles/hero.css";
 import profileImg from "../assets/images/Photo.png";
-import resumePdf from "../assets/images/surinder (1).pdf";
+import resumePdf from "../assets/images/surinder (2).pdf";
 
 export default function Hero() {
   // Container animation configuration to delay children sequentially
